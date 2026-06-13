@@ -3,43 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Danusha Rajapaksa | Academic Site Sections</title>
+  <meta name="description" content="Danusha Rajapaksa: applied economist studying crypto market microstructure, stablecoins, blockchain infrastructure, FinTech, and decentralized markets.">
+  <title>Danusha Rajapaksa | Applied Economist</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <main class="site-shell">
-    <nav class="site-nav" aria-label="Site sections">
-      <a href="research/">Research</a>
-      <a href="projects/">Projects</a>
-      <a href="teaching/">Teaching</a>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <section class="hero">
-      <div class="kicker">Academic Website Sections</div>
-      <h1 class="page-title">Research, Projects, and Teaching</h1>
-      <p class="intro">
-        This repository contains standalone sections for my academic website. Each page can be embedded inside Google Sites using the published GitHub Pages URL.
-      </p>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="./">Danusha Rajapaksa</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="./">Home</a>
+        <a href="research/">Research</a>
+        <a href="projects/">Projects</a>
+        <a href="teaching/">Teaching</a>
+        <a href="cv/">CV</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="home-page">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="profile-photo-wrap">
+        <!-- Add your photo at assets/profile.jpg. The page will show a simple placeholder until then. -->
+        <picture>
+          <source srcset="assets/profile.webp" type="image/webp">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Danusha Rajapaksa" onerror="this.outerHTML='<div class=&quot;profile-placeholder&quot;>Add your photo as<br>assets/profile.jpg</div>'">
+        </picture>
+      </div>
+
+      <div class="home-copy">
+        <div class="kicker">Applied Economics · FinTech · Digital Assets</div>
+        <h1 id="home-title" class="home-title">Welcome to my homepage.</h1>
+
+        <div class="home-description">
+          <p>
+            I completed my PhD in Applied Economics at the University of Saskatchewan in 2025.
+            My research takes a macro-finance perspective on crypto market microstructure,
+            focusing on how price discovery, liquidity, and shocks propagate across fragmented
+            trading venues connected through arbitrage and trade routing.
+          </p>
+          <p>
+            I combine transaction-level blockchain and market data with structural microstructure
+            models to study equilibrium outcomes in decentralized markets. My broader research
+            interests include stablecoins, private money, blockchain infrastructure, market design,
+            financial innovation, and regulation.
+          </p>
+          <p>
+            Alongside my research, I have taught economics courses at the University of Saskatchewan
+            and St. Thomas More College, ranging from introductory to advanced levels.
+          </p>
+        </div>
+
+        <div class="button-row" aria-label="Primary links">
+          <a class="button" href="research/">View research</a>
+          <a class="button secondary" href="projects/">View projects</a>
+          <a class="button secondary" href="cv/">View CV</a>
+        </div>
+      </div>
     </section>
 
-    <section class="project-grid">
-      <article class="card">
-        <h2>Research</h2>
-        <p>Publications, working papers, and work in progress.</p>
-        <p><a href="research/">Open research page</a></p>
-      </article>
+    <section class="home-section" aria-labelledby="quick-links-title">
+      <h2 id="quick-links-title" class="section-heading">Selected Areas</h2>
 
-      <article class="card">
-        <h2>Projects</h2>
-        <p>Thematic research programs and the blockchain teaching tool.</p>
-        <p><a href="projects/">Open projects page</a></p>
-      </article>
+      <div class="home-grid">
+        <article class="card">
+          <h3>Research</h3>
+          <p>
+            Publications, working papers, and work in progress on stablecoins, crypto market
+            microstructure, mining, fee markets, and decentralized market regulation.
+          </p>
+          <p><a href="research/">Open research page</a></p>
+        </article>
 
-      <article class="card">
-        <h2>Teaching</h2>
-        <p>Business-school oriented teaching profile, courses, and teaching tools.</p>
-        <p><a href="teaching/">Open teaching page</a></p>
-      </article>
+        <article class="card">
+          <h3>Projects</h3>
+          <p>
+            Thematic research programs connecting papers on private money, blockchain infrastructure,
+            intermediation, settlement risk, and FinTech teaching tools.
+          </p>
+          <p><a href="projects/">Open projects page</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Teaching</h3>
+          <p>
+            Business-school oriented teaching profile covering financial markets, monetary economics,
+            business analytics, FinTech, blockchain economics, and experiential simulations.
+          </p>
+          <p><a href="teaching/">Open teaching page</a></p>
+        </article>
+
+        <article class="card">
+          <h3>CV and Contact</h3>
+          <p>
+            Curriculum vitae, contact information, and links to professional materials.
+            Add your current CV PDF to the repository to make the CV button active.
+          </p>
+          <p><a href="cv/">Open CV page</a> · <a href="contact/">Contact</a></p>
+        </article>
+      </div>
     </section>
   </main>
 </body>
