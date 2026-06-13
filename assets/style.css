@@ -1,0 +1,334 @@
+:root {
+  --page-max-width: 1120px;
+  --accent: #5d75e8;
+  --accent-dark: #435ed8;
+  --accent-light: #eef1ff;
+  --text: #222;
+  --muted: #444;
+  --soft-border: rgba(93, 117, 232, 0.18);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(67, 94, 216, 0.35);
+}
+
+a:hover {
+  border-bottom-color: var(--accent-dark);
+}
+
+.site-shell,
+.research-page,
+.project-page,
+.teaching-page {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 40px 28px 70px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+  font-size: 0.96rem;
+}
+
+.site-nav a {
+  border-bottom: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--accent-light);
+}
+
+.hero,
+.project-hero,
+.teaching-hero {
+  margin-bottom: 42px;
+}
+
+.kicker,
+.project-kicker,
+.teaching-kicker {
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.page-title,
+.project-title,
+.teaching-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+  font-weight: 800;
+  margin: 0 0 18px;
+  color: #202020;
+}
+
+.intro,
+.project-intro,
+.teaching-intro {
+  max-width: 900px;
+  font-size: 1.08rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.research-section,
+.teaching-section {
+  margin-bottom: 42px;
+}
+
+.research-heading,
+.teaching-heading,
+.section-heading {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin: 0 0 18px;
+}
+
+.paper-list {
+  list-style-type: square;
+  margin: 0;
+  padding-left: 26px;
+}
+
+.paper-item {
+  margin-bottom: 26px;
+  padding-left: 4px;
+}
+
+.paper-title {
+  font-size: 1.18rem;
+  line-height: 1.35;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.paper-meta {
+  font-size: 1.02rem;
+  color: #333;
+  margin: 0;
+}
+
+.paper-meta em {
+  font-style: italic;
+}
+
+.single-paper {
+  margin-left: 26px;
+  margin-bottom: 28px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.card,
+.project-card,
+.teaching-card,
+.method-card {
+  background: #fff;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+}
+
+.card,
+.project-card,
+.teaching-card {
+  border-left: 4px solid var(--accent);
+  padding: 24px 28px;
+}
+
+.card h2,
+.project-card h2,
+.teaching-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.card p,
+.project-summary,
+.teaching-card p,
+.method-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.project-label {
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin: 18px 0 8px;
+}
+
+.project-list,
+.course-list,
+.clean-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-list li,
+.clean-list li {
+  margin: 6px 0;
+}
+
+.project-list strong,
+.clean-list strong {
+  font-weight: 800;
+}
+
+.tag-row,
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tag,
+.project-tag,
+.teaching-tag {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+.links,
+.project-links,
+.teaching-links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.course-list {
+  list-style-type: square;
+  padding-left: 24px;
+}
+
+.course-list li {
+  margin-bottom: 18px;
+}
+
+.course-title {
+  display: block;
+  font-weight: 800;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.course-meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin-top: 2px;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+.method-card {
+  padding: 22px 24px;
+  border-top: 4px solid var(--accent);
+}
+
+.method-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.embed-note {
+  padding: 14px 16px;
+  background: var(--accent-light);
+  border: 1px solid var(--soft-border);
+  border-radius: 10px;
+  color: #303b78;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 860px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card.featured {
+    grid-column: 1 / -1;
+  }
+
+  .method-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .site-shell,
+  .research-page,
+  .project-page,
+  .teaching-page {
+    padding: 32px 20px 56px;
+  }
+
+  .research-heading,
+  .teaching-heading,
+  .section-heading {
+    font-size: 1.08rem;
+  }
+
+  .paper-title {
+    font-size: 1.05rem;
+  }
+
+  .paper-meta {
+    font-size: 0.98rem;
+  }
+
+  .card,
+  .project-card,
+  .teaching-card,
+  .method-card {
+    padding: 22px 22px;
+  }
+}
