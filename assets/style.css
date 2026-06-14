@@ -607,3 +607,18 @@ a:focus {
     max-width: 100%;
   }
 }
+.eyebrow {
+  margin: 0 0 22px;
+  color: #5d75e8;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-lead {
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: #222;
+  font-weight: 500;
+}
